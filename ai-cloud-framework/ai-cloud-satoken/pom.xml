@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ai-cloud-framework</artifactId>
+        <groupId>com.cloud</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ai-cloud-satoken</artifactId>
+
+    <description>
+        ai-cloud-satoken分布式事务
+    </description>
+
+    <dependencies>
+
+        <!-- Sa-Token 权限认证 -->
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- Sa-Token整合redis -->
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-dao-redis-jackson</artifactId>
+        </dependency>
+
+        <!--  Redis -->
+        <dependency>
+            <groupId>com.cloud</groupId>
+            <artifactId>ai-cloud-redis</artifactId>
+        </dependency>
+
+        <!-- Api User -->
+        <dependency>
+            <groupId>com.cloud</groupId>
+            <artifactId>ai-cloud-user-api</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>
